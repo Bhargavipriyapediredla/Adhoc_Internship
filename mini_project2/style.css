@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2);
+}
+
+.app-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:280px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.12);
+    border-right:1px solid rgba(255,255,255,0.2);
+    padding:25px;
+    color:white;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo i{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.logo h2{
+    font-weight:600;
+}
+
+.category-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.category-box input{
+    flex:1;
+}
+
+.category-box button{
+    width:45px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+#categoryList{
+    list-style:none;
+}
+
+#categoryList li{
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.15);
+    cursor:pointer;
+    transition:.3s;
+}
+
+#categoryList li:hover{
+    background:rgba(255,255,255,0.3);
+    transform:translateX(5px);
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+    overflow-y:auto;
+}
+
+.header{
+    color:white;
+    margin-bottom:25px;
+}
+
+.header h1{
+    font-size:36px;
+}
+
+.editor-card{
+    background:rgba(255,255,
